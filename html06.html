@@ -70,7 +70,10 @@
                                     <option value="1" selected>서울</option>
                                     <option value="2">경기</option>
                                     <option value="3">강원</option>
-                                    <option value="4"></option>
+                                    <option value="4">충청</option>
+                                    <option value="5">영남</option>
+                                    <option value="6">호남</option>
+                                    <option value="7">기타</option>
                             </td>
                             </select>
                         </tr>
@@ -81,11 +84,39 @@
                 <legend>추가정보</legend>
                 <table>
                     <tbody>
-
+                        <tr>
+                            <th><label for="age">나이</label></th>
+                            <td><input type="number" name="age" id="age" max="200" min="0" step="2"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="birth">생년월일</label></th>
+                            <td><input type="date" name="birth" id="birth"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="color">좋아하는 색상</label></th>
+                            <td><input type="color" name="color" id="color"></td>
+                        </tr>
+                        <tr>
+                            <th>하고싶은 말</th>
+                            <td>
+                                <textarea name="memo" id="memo" cols="40" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>사진</th>
+                            <td>
+                                <input type="file" name="file" id="file">
+                                <input type="range" id="pic_size" max="100" min="1">
+                                <input type="hidden" id="idck" name="idck" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="회원가입"></td>
+                            <td><input type="reset" value="취소"></td>
+                        </tr>
                     </tbody>
                 </table>
             </fieldset>
-
         </form>
     </div>
 </body>
